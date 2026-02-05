@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.App {
+  text-align: center;
+}
+
+/* Custom styles for sentiment indicators */
+.sentiment-positive {
+  @apply text-green-600 bg-green-100;
+}
+
+.sentiment-negative {
+  @apply text-red-600 bg-red-100;
+}
+
+.sentiment-neutral {
+  @apply text-gray-600 bg-gray-100;
+}
+
+/* Market signal styles */
+.signal-bullish {
+  @apply bg-green-500 text-white;
+}
+
+.signal-bearish {
+  @apply bg-red-500 text-white;
+}
+
+.signal-neutral {
+  @apply bg-gray-500 text-white;
+}
+
+/* Loading animation */
+.loading-spinner {
+  @apply animate-spin rounded-full h-8 w-8 border-b-2 border-yellow-600;
+}
+
+/* Article card hover effects */
+.article-card {
+  @apply transition-all duration-200 hover:shadow-lg hover:scale-105;
+}
